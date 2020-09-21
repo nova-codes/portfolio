@@ -188,7 +188,7 @@ img.hex {
     margin-right: 5px;
     margin-bottom: 1px; }
 
-.bg-success { background-color: var(--pink) !important; } 
+.bg-success, .btn-success { background-color: var(--pink) !important; border: 0;  } 
 .bg-warning { background-color: var(--purple) !important; } 
 .bg-danger { background-color: var(--yellow) !important; } 
 .bg-none { background-color: var(--teal) !important; } 
