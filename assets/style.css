@@ -1,0 +1,213 @@
+:root {
+    --mint: #bbe9e8;
+    --yellow: #f5e284;
+    --lighta: #fafafa;
+    --light5: #f5f5f5;
+    --teal: #68aaa9;
+    --warning: #dfc12b;
+    --danger: #e69464;
+    --pink: #e283b9;
+    --purple: #a583e2;
+    --dark: #232323;
+    --none: #676767; }
+
+@font-face {
+    src: url('./fonts/exodus-regular.otf') format('opentype');
+    font-family: 'exodus';
+}
+
+::-webkit-scrollbar { width: 9px; }
+::-webkit-scrollbar-track { background-color: var(--teal); border: 4px solid var(--dark); }
+::-webkit-scrollbar-thumb { background-color: var(--teal); }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+body {
+    background: #efefef url('./images/background.jpg') no-repeat;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #454545; 
+    line-height: 120%; }
+
+header { 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+    
+a:link,
+a:active,
+a:visited {
+    text-decoration: none; }
+
+a:hover { color: white; }
+
+p {
+    font-size: 16px;
+    line-height: 1.75rem; }
+
+p a:hover { color: var(--purple); }
+
+.top {
+    background: #232323;
+    margin: 0;  }
+
+.tall {
+    min-height: 275px;
+    padding: 40px; }
+
+img.initials {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: cover; }
+
+img.initials:nth-child(2) {
+    margin-left: -20px; 
+    margin-top: 40px; }
+
+img.hex {
+   max-width: 85%;
+   max-height: 85%;
+   object-fit: cover; }
+
+.yellow {
+    background: #F5E284; 
+    margin: 0;
+    padding: 10px 0 !important;
+    box-sizing: border-box;
+    text-align: center;
+    font: 18px/100% 'Cutive Mono', monospace;
+    color: #232323;
+    text-transform: uppercase; }
+
+.navbar-nav li {
+    margin-right: 60px; 
+    letter-spacing: 2px; }
+
+.nopad { padding: 0; }
+
+.chill {
+    background: var(--mint) url('./images/flora-1.png');
+    background-size: 90%;
+    background-blend-mode: soft-light;
+    padding: 30px; }
+
+.chill h1 {
+    font: bold 18px/100% 'Cutive Mono', 'Courier New', monospace;
+    color: #BBE9E8;
+    background-color: var(--dark);
+    text-align: center;
+    padding: 20px; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; }
+
+.chill .card {
+    width: auto; 
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: -7px; 
+    border-radius: 0; }
+
+.chill .card:last-child { margin-bottom: 0; }
+
+.card-title { 
+    font: 22px/100% 'Cutive Mono', monospace;
+    text-transform: uppercase; }
+
+.card-subtitle {
+    font-size: 13px; 
+    text-transform: uppercase; }
+
+.card-text { font-size: 14px; }
+
+.card-body .progress {
+    height: 5px;
+    border-radius: 0; 
+    margin-bottom: 10px; 
+    margin-top: -5px; }
+
+.he-container {
+    min-height: 50vh;
+    padding: 30px; }
+
+.jumbotron {
+    background: var(--light5) url('./images/flora-10.png') no-repeat;
+    background-size: 35%;
+    background-position: bottom right; 
+    padding: 40px; }
+
+.jumbotron h1 {
+    display: block;
+    font: 50px/100% 'exodus', serif;
+    color: var(--mint);
+    letter-spacing: 3px;
+    word-spacing: 6px; 
+    margin: 0 0 50px 0; 
+    padding: 20px;
+    background-color: var(--dark); }
+
+.right { float: right; }
+
+.left { float: left; }
+
+.right + .row,
+.left + .row {
+    clear: both; }
+
+.hexagon,
+.hexagon2 {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    width: 245px;
+    height: 211px; }
+
+.hexagon2 {
+    background-color: var(--pink); 
+    width: 285px;
+    height: 251px; 
+    padding: 10px; 
+    margin: 0 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.hexagon img { 
+    width: 245px;
+    height: 211px;
+    object-fit: cover; 
+    object-position: center; }
+
+.about-me:first-letter {
+    font: 80px/100% 'exodus', serif;
+    color: var(--purple); 
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 1px; }
+
+.bg-success { background-color: var(--pink) !important; } 
+.bg-warning { background-color: var(--purple) !important; } 
+.bg-danger { background-color: var(--yellow) !important; } 
+.bg-none { background-color: var(--teal) !important; } 
+
+footer {
+    background: var(--purple); 
+    text-align: center; 
+    padding: 10px 0;
+}
+
+footer > span {
+    display: block; 
+    margin: 5px;
+    color: white; 
+    font-size: 11px; 
+}
+
+footer > span > a {
+    color: white;
+    font-size: 30px; 
+    margin-left: 10px; 
+}
