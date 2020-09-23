@@ -1,5 +1,3 @@
-# OO2: Responsive Portfolio
+# OO2: RESPONSIVE PORTFOLIO
 
-The basis of this assignment was to utilize Bootstrap to create a portfolio with a responsive layout. A responsive layout means it maintains its styling but adjusts automatically based on the screen size of the device used to view it.
-
-Bootstrap is a CSS - and Javascript - framework, easily installed to create a responsive layout without too much effort from the developer. It provides a good starting point to making a professional website for users of any skill-set.
+The basis of this assignment was to create a responsive portfolio website using HTML, CSS, and Bootstrap. Bootstrap is a CSS framework based on the flexbox model that allows users to easily and effortlessly make any website or web application responsive to multiple devices.
