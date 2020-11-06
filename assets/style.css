@@ -6,7 +6,7 @@
     --mint: #bbe9e8;
     --yellow: #f5e284;
     --lighta: #fafafa;
-    --light5: #f5f5f5;
+    --lightf5: #f5f5f5;
     --teal: #68aaa9;
     --warning: #dfc12b;
     --danger: #e69464;
@@ -24,10 +24,9 @@
  * Fancy Font Face
  **********************************/
 
-@font-face {
-    src: url('./fonts/exodus-regular.otf') format('opentype');
-    font-family: 'exodus';
-}
+ @font-face {
+    font-family: 'Aqua';
+    src: url('fonts/aqua.ttf'); }
 
 /**********************************
  * Customize Webkit Scrollbar
@@ -208,43 +207,6 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--color7); }
-/**********************************
- * Navbar Styling
- **********************************/
-
-.unav {
-    width: 100%;
-    height: 61px;
-    box-sizing: border-box;
-    background: var(--dark7);
-    border-bottom: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999; }
-
-.unav a:link,
-.unav a:active,
-.unav a:visited {
-    font: 10px/100% 'Livvic', sans-serif;
-    color: #fafafa;
-    text-transform: uppercase;
-    padding: 5px 8px;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-    text-shadow: 1px 1px black; }
-    
-.unav a span { margin-right: 5px; font-size: 15px; color: var(--color); }
-
-.navbar-nav li {
-    margin-right: 60px; 
-    letter-spacing: 2px; }
-
-.nopad { padding: 0; }
 
 /**********************************
  * Sidebar -- this will go elsewhere
@@ -290,18 +252,108 @@ body {
     margin-bottom: 10px; 
     margin-top: -5px; }
  **********************************/
+/**********************************
+ * Navigation Styling
+ **********************************/
 
+ .toplinks {
+    width: 100%;
+    min-height: 60px;
+    box-sizing: border-box;
+    background: linear-gradient(to left, var(--color3), var(--color7)),url(https://cdnw.nickpic.host/s5gEZm.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: inherit; 
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    border-top: 1px solid black; 
+    border-bottom: 1px solid black;
+    align-self: flex-start }
+    
+  .toplinks .buttons {
+    width: 85%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap; 
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center; }
+    
+  .toplinks .buttons a {
+    font:  10.3px/100% 'Livvic', sans-serif;
+    font-weight: 300;
+    color: rgba(239,239,239,0.95);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 10px var(--light5);
+    display: inline-block; 
+    position: relative;
+    padding: 0; }
+      
+  .toplinks .buttons a:before,
+  .toplinks .buttons a:after {
+    content: ''; 
+    display: flex;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    -webkit-transform: scaleX(0) scaleY(0);
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    transition: all .3s linear; }
+  
+  .toplinks .buttons a:before {
+    border-left: 1px solid var(--light5); 
+    border-top: 1px solid var(--light5); 
+    top: -10px;
+    left: -20px;
+    -webkit-transform-origin: 0% 0%; }
+    
+  .toplinks .buttons a:after {
+    border-right: 1px solid var(--light5); 
+    border-bottom: 1px solid var(--light5); 
+    bottom: -10px;
+    right: -20px;
+    -webkit-transform-origin: 100% 100%; }
+    
+  .toplinks .buttons a:hover:before,
+  .toplinks .buttons a:hover:after {
+    -webkit-transform: scaleX(1) scaleY(1); }
+
+.nopad { padding: 0; margin: 0; box-sizing: border-box; }
 
 /**********************************
  * Content Styling
  **********************************/
+#wrapper {
+    width: 100%;
+    padding-bottom: 1px;
+    padding-top: 1px; 
+    position: relative;
+    top: 100vh;
+    left: 0;
+    z-index: 98; 
+    box-sizing: border-box;
+    background: #1b1b1b url('images/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: initial; }
 
-.he-container {
-    min-height: 50vh;
-    padding: 30px; }
+#innerwrapper {
+    width: calc(100% - 200px);
+    margin: 100px auto;
+    padding: 100px 0;
+    background: var(--black4);
+    outline: 1px solid var(--light3); }
 
 .jumbotron {
-    background: var(--light5) url('./images/flora-10.png') no-repeat;
+    background: var(--dark5) url('./images/flora-10.png') no-repeat;
     background-size: 35%;
     background-position: bottom right; 
     padding: 40px; }
