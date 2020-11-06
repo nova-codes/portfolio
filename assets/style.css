@@ -210,31 +210,18 @@ body {
 
 /**********************************
  * Sidebar -- this will go elsewhere
+**********************************/
 
-
-.chill {
-    background: var(--mint) url('./images/flora-1.png');
-    background-size: 90%;
-    background-blend-mode: soft-light;
-    padding: 30px; }
-
-.chill h1 {
-    font: bold 18px/100% 'Cutive Mono', 'Courier New', monospace;
-    color: #BBE9E8;
-    background-color: var(--dark);
-    text-align: center;
-    padding: 20px; 
-    text-transform: uppercase; 
-    letter-spacing: 2px; }
-
-.chill .card {
+.card {
     width: auto; 
     border: 0;
     margin-bottom: 30px;
-    margin-top: -7px; 
-    border-radius: 0; }
+    margin-left: 50px; 
+    margin-top: -30px; 
+    border-radius: 0;
+    background: transparent; }
 
-.chill .card:last-child { margin-bottom: 0; }
+.card:last-child { margin-bottom: 0; }
 
 .card-title { 
     font: 22px/100% 'Cutive Mono', monospace;
@@ -251,7 +238,7 @@ body {
     border-radius: 0; 
     margin-bottom: 10px; 
     margin-top: -5px; }
- **********************************/
+ 
 /**********************************
  * Navigation Styling
  **********************************/
@@ -260,7 +247,7 @@ body {
     width: 100%;
     min-height: 60px;
     box-sizing: border-box;
-    background: linear-gradient(to left, var(--color3), var(--color7)),url(https://cdnw.nickpic.host/s5gEZm.jpg);
+    background: linear-gradient(to left, var(--color3), var(--color7)),url(images/bg.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: inherit; 
@@ -281,9 +268,13 @@ body {
     align-items: center;
     justify-content: space-evenly;
     align-content: center; }
+
+    .toplinks ul {
+        list-style-type: none;
+    }
     
   .toplinks .buttons a {
-    font:  10.3px/100% 'Livvic', sans-serif;
+    font:  1rem/100% 'Livvic', sans-serif;
     font-weight: 300;
     color: rgba(239,239,239,0.95);
     text-transform: uppercase;
@@ -348,25 +339,26 @@ body {
 #innerwrapper {
     width: calc(100% - 200px);
     margin: 100px auto;
-    padding: 100px 0;
+    padding: 50px 0;
     background: var(--black4);
     outline: 1px solid var(--light3); }
 
 .jumbotron {
-    background: var(--dark5) url('./images/flora-10.png') no-repeat;
-    background-size: 35%;
-    background-position: bottom right; 
+    margin: 5px auto; 
+    width: 88%; 
+    background: var(--dark5);
+    border: 1px solid var(--light3); 
     padding: 40px; }
 
 .jumbotron h1 {
     display: block;
-    font: 50px/100% 'exodus', serif;
-    color: var(--mint);
-    letter-spacing: 3px;
-    word-spacing: 6px; 
+    font: 30px/100% 'aqua', serif;
+    text-transform: uppercase; 
+    color: var(--light);
     margin: 0 0 50px 0; 
-    padding: 20px;
-    background-color: var(--dark); }
+    padding: 20px 20px 15px 20px;
+    background-color: var(--color7);
+    text-shadow: 2px 2px var(--dark5); }
 
 .right { float: right; }
 
@@ -383,7 +375,7 @@ body {
     height: 211px; }
 
 .hexagon2 {
-    background-color: var(--pink); 
+    background-color: var(--color5); 
     width: 285px;
     height: 251px; 
     padding: 10px; 
@@ -398,12 +390,44 @@ body {
     object-fit: cover; 
     object-position: center; }
 
+p {
+    font: 1rem/150% 'Livvic', 'Calibri', sans-serif; 
+    text-align: justify; 
+}
+
+p a {
+    color: var(--color); 
+}
+
+.color { color: var(--color); }
+
 .about-me:first-letter {
-    font: 80px/100% 'exodus', serif;
-    color: var(--purple); 
+    font: 50px/100% 'Martel', serif;
+    color: var(--color); 
     float: left;
     margin-right: 5px;
-    margin-bottom: 1px; }
+    margin-bottom: -5px; }
+
+.break { 
+    width: 10px; 
+    height: 100px; }
+
+.resume h2 {
+    font: 27px/100% 'Martel', serif;
+    color: var(--color);
+    letter-spacing: 2px; 
+    word-spacing: 5px; 
+}
+
+.resume h2 span {
+    font-size: 15px;
+    font-style: italic; 
+    text-transform: lowercase; 
+    color: var(--light7); 
+    display: block; 
+    text-align: right;
+    padding: 0 20px; 
+}
 
 /**********************************
  * Footer Styling
