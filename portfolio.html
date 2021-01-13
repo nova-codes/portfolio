@@ -9,57 +9,109 @@
     <title> 𝙽𝙾𝚅𝙰 𝙲𝙾𝙳𝙴𝚂 ☆ 𝙷𝙰𝙽𝙽𝙰𝙷 𝙴𝙻𝙻𝙸𝙾𝚃𝚃 </title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <!-- Hannah's CSS -->
-    <link rel='stylesheet' href='assets/style.css' />
+    <link rel='stylesheet' href='./assets/style.css' />
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Livvic:300i,400|Martel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
 
-<body id='g7'>
+<body>
 
-    <!-- Header Section -->
-    <div class='container-fluid nopad'>
-        <header>
-            <big> <span>c</span>osmic <br />
-                ch<span>i</span>ll <br />
-                loun<span>g</span>e
-            </big>
-        </header>
+    <!-- this header section is trying to kill me -->
+    <div class='container-fluid top'>
+        <div class='container'>
+            <div class='row align-items-center tall'>
+                <div class='col align-self-center'>
+                    <img src='./assets/images/honeycomb.png' class='hex' />
+                </div>
+
+                <div class='col'>
+                    <img src='./assets/images/h-e.png' class='initials' />
+                </div>
+            </div> <!-- /.row align-items-center tall -->
+        </div> <!-- /.container -->
+
+        <div class='row'>
+            <div class='col nopad'>
+
+                <nav class="navbar navbar-expand-lg navbar-light yellow">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html"> Home</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="portfolio.html"> Portfolio  <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"> Contact </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div> <!-- /.col-sm-12 .nopad -->
+        </div> <!-- /.row -->
+
     </div>
 
-    <!-- Page content -->
-    <div id='wrapper'>
+    <div class='container-fluid'>
 
-        <!-- navigation -->
-        <nav class="navbar toplinks">
-            <ul class='buttons'>
-                <li>
-                    <a href='index.html'> Home </a>
-                </li>
-                <li>
-                    <a href='portfolio.html'> Portfolio </a>
-                </li>
-                <li>
-                    <a href='contact.html'> Contact </a>
-                </li>
-            </ul>
-        </nav>
+        <div class='row'>
 
-        <div class='container' id='innerwrapper'>
-
-            <div class='row'>
-                <!-- Content area -->
+            <div class='col-xl-12 he-container'>
                 <div class='jumbotron jumbotron-fluid'>
-                    
-                	<h1 class='left'> completed works </h1>
+
+                    <h1 class='left'> completed works </h1>
 
                     <div class='row'>
+                        <div class='col-lg-4'>
+                            <div class="card port" style="width: 100%;">
+                                <img src="assets/images/minion.png" class="card-img-top" alt="Preview of Minion Mingle">
+                                <div class="card-body">
+                                <h5 class="card-title">Minion Mingle</h5>
+                                <p class="card-text">A new dating application where you can find your one true love.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                <li class="list-group-item"> Create an account and sign up. </li>
+                                <li class="list-group-item"> Complete your profile and let our patented 'Terrible' algorithm do the rest! </li>
+                                </ul>
+                                <div class="card-body">
+                                <a href="https://the-minion-mingle.herokuapp.com" class="card-link">Live preview</a>
+                                </div>
+                            </div>
+                        </div>
+
+                      
+                        <div class='col-lg-4'>
+                            <div class="card port" style="width: 100%;">
+                                <img src="assets/images/burger-app.png" class="card-img-top" alt="Preview of Eat Da Burger!">
+                                <div class="card-body">
+                                <h5 class="card-title">Dream Burger Simulator</h5>
+                                <p class="card-text">An interactive simulation game where <i>you</i> decide your burger-destiny.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                <li class="list-group-item"> Add your dream burgers to the list. </li>
+                                <li class="list-group-item"> Choose your warrior and devour them to make them your destiny. </li>
+                                </ul>
+                                <div class="card-body">
+                                <a href="https://dream-burger-simulator.herokuapp.com/" class="card-link">Live preview</a>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class='col-lg-4'>
                             <div class="card port" style="width: 100%;">
                                 <img src="assets/images/bops-hops.png" class="card-img-top" alt="Preview of Bops and Hops">
