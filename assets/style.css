@@ -47,6 +47,8 @@ a:visited {
 
 a:hover { color: white; }
 
+a.porta { color: var(--pink); }
+
 p {
   font-size: 16px;
   line-height: 1.75rem; }
@@ -91,11 +93,12 @@ img.hex {
   background: var(--mint) url('./images/flora-1.png') repeat;
   background-size: auto; 
   background-blend-mode: soft-light;
-  padding: 30px; 
+  padding: 30px 15px; 
   display: flex; 
-  flex-flow: row nowrap; 
+  flex-flow: row wrap; 
   margin-bottom: 30px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  border: 1px solid var(--teal); }
 
 .chill h1 {
   font: bold 18px/100% 'Cutive Mono', 'Courier New', monospace;
@@ -104,14 +107,20 @@ img.hex {
   text-align: center;
   padding: 20px; 
   text-transform: uppercase; 
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  border-radius: 5px 5px 0 0; }
+
+  h1.alone {
+    border-radius: 5px; 
+  }
 
 .chill .card {
   width: auto; 
   border: 0;
   margin-bottom: 30px;
-  margin-top: -7px; 
-  border-radius: 0; }
+  margin-top: -7px;
+  border-radius: 5px; 
+  border: 1px solid #cdcdcd; }
 
 .chill .card:last-child { margin-bottom: 0; }
 
@@ -135,7 +144,7 @@ h4.card-title {
   text-transform: uppercase; }
 
 .text-muted {
-  font-size: 13px; 
+  font-size: 16px; 
   text-transform: uppercase;
   color: var(--teal);  }
 
@@ -156,11 +165,12 @@ h4.card-title {
   padding: 30px; }
 
 .jumbotron {
-  background: var(--light5) url('./images/flora-10.png') no-repeat;
-  background-size: 35%;
+  background: var(--lighta) url('./images/flora-10.png') no-repeat;
+  background-size: 45%;
   background-position: bottom right; 
   padding: 40px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  border: 1px solid #cdcdcd; }
 
 .jumbotron h1 {
   display: block;
@@ -170,7 +180,8 @@ h4.card-title {
   word-spacing: 6px; 
   margin: 0 0 50px 0; 
   padding: 20px;
-  background-color: var(--dark); }
+  background-color: var(--dark); 
+  border-radius: 5px; }
 
 h1 a {
   color: var(--pink); 
