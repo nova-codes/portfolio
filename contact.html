@@ -112,16 +112,34 @@
     </div>
 
     <footer>
-        <span><a href='https://www.linkedin.com/in/hannah-elliott-274750126/' target='_blank' title='LinkedIn'><i
-                    class="fab fa-linkedin"></i></a>
-
-            <a href='https://novacodes.tumblr.com' target='_blank' title='Coding Tumblr'><i
-                    class="fab fa-tumblr-square"></i></a>
-
-            <a href='https://github.com/nova-codes' target='_blank' title='GitHub'><i
-                    class="fab fa-github"></i></a></span>
-
-        <span> &copy; Hannah Elliott, 2020.</span>
+        <div class='links-con'>
+            <input type='checkbox' class='social-toggle' id='he-menu'>
+            <label class='menu' for='he-menu'>
+        
+                <div class='gloop'>
+                    <span class='initials'> HE </span>
+                </div>
+        
+            </label>
+            
+            <ul class='he-links'>
+                <li class='he-li he-li1 linkedin'><a href='/'> <i class="fab fa-linkedin"></i> </a></li>
+                <li class='he-li he-li2 tumblr'><a href='/'> <i class="fab fa-tumblr"></i> </a></li>
+                <li class='he-li he-li3 github'><a href='/'> <i class="fab fa-github"></i> </a></li>
+            </ul>
+        </div>
+        
+        
+        <!-- SVG mark-up from Lucas Bebber @ CSS-Tricks.com -->	
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                  <feComposite in2="goo" in="SourceGraphic" result="mix" />
+              </filter>
+            </defs>
+        </svg>
     </footer>
 
 

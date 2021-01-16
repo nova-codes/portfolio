@@ -229,7 +229,7 @@ h1 a {
 .bg-danger { background-color: var(--yellow) !important; } 
 .bg-none { background-color: var(--teal) !important; } 
 
-footer {
+/* footer {
   background: var(--mint); 
   text-align: center; 
   padding: 10px 0;
@@ -249,10 +249,135 @@ footer > span {
 footer > span > a {
   color: white;
   font-size: 30px; 
-  margin-left: 10px; }
+  margin-left: 10px; } */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: block;
+  z-index: 10; 
+}  
 
 .btn-port {
   background: var(--purple);
   color: white; }
 
 .color { color: var(--teal); }
+
+/* social media links */
+.links-con {
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	bottom: 0;
+	left: 0px;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	z-index: 1;
+	overflow: hidden; 
+	filter: url('#goo');
+}
+
+.links-con input { display: none; }
+
+/* label styling for social media links */
+.menu {
+	display: block;
+	position: fixed;
+	bottom: -50px;
+	left: -40px;
+	z-index: 3;
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	background-color: var(--pink);
+	transform: scale(0.7);
+	transition: all 0.8s ease-in-out;
+}
+
+.menu .gloop {
+	width: 40px;
+	margin: 35px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu .gloop .initials {
+	font: 60px/100% 'Playfair Display', serif;
+	color: white;
+	letter-spacing: 5px;
+	padding-left: 10px;
+}
+
+/* link ul li styling for social media links */
+.links-con .he-links {
+	list-style-type: none;
+	display: inline-flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+
+.links-con .he-links .he-li {
+	width: 30px;
+	height: 30px;
+	padding: 20px !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	z-index: 1;
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+	transition: all 0.5s ease;
+	margin: 0;
+}
+
+.links-con .he-links .he-li.linkedin { background: var(--purple); }
+
+.links-con .he-links .he-li.tumblr { background: var(--yellow); }
+
+.links-con .he-links .he-li.github { background: var(--mint); }
+
+.links-con .he-links .he-li a {
+	font-size: 25px;
+	text-decoration: none;
+  color: white;
+}
+
+.links-con input:checked + .menu { transform: scale(0.9) rotate(23deg); }
+
+/* do the thing */ 
+.he-li {
+	transform: translate3d(0, 0, 0);
+  transition: transform ease-out 0.3s;
+}
+
+.he-links .he-li.linkedin,
+.he-links .he-li.tumblr,
+.he-links .he-li.github { transition-duration: 1s; }
+
+.links-con input:checked ~ .he-li {
+	transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+}
+
+.links-con input:checked ~ .he-links .he-li.linkedin {
+transition-duration: 0.5s;
+	transform: translate3d(0, -125px, 0) rotate(360deg);
+}
+
+.links-con input:checked ~ .he-links .he-li.tumblr {
+transition-duration: 0.8s;
+	transform: translate3d(85px, -90px, 0) rotate(360deg);
+}
+
+.links-con input:checked ~ .he-links .he-li.github {
+transition-duration: 1.1s;
+	transform: translate3d(125px, 0, 0) rotate(360deg);
+}
